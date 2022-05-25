@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Paint</title>
+</head>
+<body>
+    
+    <div id="tools">
+        <div class="small-container">
+            <label for="color" class="fonts">Color</label>
+            <input type="color" name="color" id="color">
+        </div>
+
+
+        <div class="small-container">
+            <p class="fonts">Shape</p>
+            <div class="border">
+                <div onclick="chooseShape(event)" id="circle"></div>
+            </div>
+            <div class="border">
+                <div onclick="chooseShape(event)" id="square"></div>
+            </div>
+        </div>
+
+        <div class="small-container">
+            <p class="fonts">Pencil</p>
+            <div onclick="pencil()" class="border">
+                <i class="bi bi-pencil-fill"></i>
+            </div>
+        </div>
+
+
+        <div class="small-container">
+            <p class="fonts">Thickness</p>
+            <div class="border pixel-size">
+                <div onclick="chooseThickness(event)" id="circle1"></div>
+            </div>
+            <div class="border pixel-size">
+                <div onclick="chooseThickness(event)" id="circle2"></div>
+            </div>
+            <div class="border pixel-size">
+                <div onclick="chooseThickness(event)" id="circle3"></div>
+            </div>
+        </div>
+
+
+        <div class="small-container">
+            <p class="fonts">Brush</p>
+            <div onclick="brush()" class="border">
+                <i class="bi bi-brush-fill"></i>
+            </div>
+        </div>
+
+
+        <div class="small-container">
+            <p class="fonts">New<br>Paper</p>
+            <div onclick="newPaper()" class="border">
+                <i class="bi bi-clipboard-fill"></i>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
